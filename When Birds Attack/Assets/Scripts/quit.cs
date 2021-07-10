@@ -13,6 +13,7 @@ public class quit : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.R)) // change escape to any other character if you like 
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1f;
         }
     
     }
