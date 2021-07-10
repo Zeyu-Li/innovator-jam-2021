@@ -24,7 +24,7 @@ public class laser : MonoBehaviour
     private void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.CompareTag("Ground")) {   
             // destroy item + sound
-            audioSource.PlayOneShot(audioClip, 1f);
+            audioSource.PlayOneShot(audioClip, .7f);
             Destroy(gameObject);
         } else if (collision.gameObject.CompareTag("Player")) {
             // decrease player health
@@ -32,7 +32,7 @@ public class laser : MonoBehaviour
             healthManager.GetComponent<healthManager>().health -= 1;
 
             // play sound and destroy
-            audioSource.PlayOneShot(hurtClip, 1f);
+            audioSource.PlayOneShot(hurtClip, .7f);
             Destroy(gameObject);
         }
     }

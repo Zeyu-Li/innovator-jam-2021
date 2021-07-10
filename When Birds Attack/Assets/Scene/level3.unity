@@ -3029,7 +3029,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 945d5a3c3502bd745bb9e35e726c4da2, type: 2}
-  - {fileID: 901902630548382809, guid: 5717ef58af7b8a243a0fe91949f7a2b4, type: 3}
+  - {fileID: 2100000, guid: 945d5a3c3502bd745bb9e35e726c4da2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3861,6 +3861,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1397925750}
     m_Modifications:
     - target: {fileID: 690699564, guid: 870282fd3ce5d654da913eb92601cef7, type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7fb9ba095c4c1b44094726e4d1e1521d, type: 3}
+    - target: {fileID: 690699564, guid: 870282fd3ce5d654da913eb92601cef7, type: 3}
       propertyPath: brigdeObject
       value: 
       objectReference: {fileID: 1846370139}
@@ -4593,6 +4597,7 @@ MonoBehaviour:
   bridgeDrawn: 0
   doneDrawn: 0
   speed: 15
+  buttonSound: {fileID: 8300000, guid: 7fb9ba095c4c1b44094726e4d1e1521d, type: 3}
 --- !u!4 &5829435076101061364
 Transform:
   m_ObjectHideFlags: 0

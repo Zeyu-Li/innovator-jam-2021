@@ -12,10 +12,14 @@ public class drawBridge : MonoBehaviour
 
     // Time when the movement started.
     private float startTime;
+    // audio
+    AudioSource audioSource;
+    public AudioClip buttonSound;
 
     Vector3 initialPosition;
     void Start() {
         initialPosition = brigdeObject.transform.position;
+        audioSource = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,7 +41,8 @@ public class drawBridge : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && !doneDrawn) {
             bridgeDrawn = true;
             startTime = Time.time;
-            // play sound?
+            // play sound
+            audioSource.PlayOneShot(buttonSound, .2f);
 
             // push button animation
             gameObject.transform.parent.GetComponent<Animator>().SetBool("isOn", true);
