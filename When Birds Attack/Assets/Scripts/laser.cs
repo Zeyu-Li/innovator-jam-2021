@@ -6,7 +6,7 @@ public class laser : MonoBehaviour
 {
     public float speed = 5f;
     // audio
-    public AudioSource audioSource;
+    AudioSource audioSource;
     public AudioClip audioClip;
 
     Rigidbody rb;
@@ -15,6 +15,8 @@ public class laser : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = transform.up * -speed;
+        // find auto source
+        audioSource = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
