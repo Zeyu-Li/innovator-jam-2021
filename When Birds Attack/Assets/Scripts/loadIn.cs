@@ -15,6 +15,7 @@ public class loadIn : MonoBehaviour
     private float startTime;
 
     bool hasSeen;
+    bool done = false;
     void Start()
     {
         hasSeen = PlayerPrefs.GetInt(SceneManager.GetActiveScene().name) == 0;
@@ -28,12 +29,16 @@ public class loadIn : MonoBehaviour
     void Update()
     {
         // if transition has not been seen before, play it
-        if (hasSeen) {
+        if (hasSeen && !done) {
             // set transition seen to true
             PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 1);
             
             float distCovered = (Time.time - startTime) * speed;
             float fractionOfJourney = distCovered / (startDistance-endDistance);
+
+            if (fractionOfJourney > 1.0f)
+                done = true;
+            
             fog.transform.position = Vector3.Lerp(new Vector3(0, startDistance, 0), new Vector3(0, endDistance, 0), fractionOfJourney);
         }
         
