@@ -34,11 +34,13 @@ public class drawBridge : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+        if (collision.gameObject.CompareTag("Player") && !doneDrawn) {
             bridgeDrawn = true;
             startTime = Time.time;
             // play sound?
 
+            // push button animation
+            gameObject.transform.parent.GetComponent<Animator>().SetBool("isOn", true);
         }
     }
 }

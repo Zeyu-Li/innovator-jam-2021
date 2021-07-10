@@ -1,6 +1,6 @@
 # Innovator's Jam 2021
 
-![logo](When Birds Attack/Assets/Sprites/logo.png)
+![logo](https://raw.githubusercontent.com/Zeyu-Li/innovator-jam-2021/main/When%20Birds%20Attack/Assets/Sprites/logo.png)
 
 Attacked from Above
 
