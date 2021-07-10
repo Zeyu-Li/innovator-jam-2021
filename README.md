@@ -1,6 +1,8 @@
 # Innovator's Jam 2021
 
-When Birds Attack
+![logo](When Birds Attack/Assets/Sprites/logo.png)
+
+Attacked from Above
 
 See [itch.io page](https://itch.io/jam/ij2021)
 
