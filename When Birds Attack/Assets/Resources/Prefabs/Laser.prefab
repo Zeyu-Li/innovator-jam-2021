@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  audioSource: {fileID: 0}
   audioClip: {fileID: 8300000, guid: 2e29549419c5f13489fcce35dbadf17d, type: 3}
+  hurtClip: {fileID: 8300000, guid: 7139cdc05d8db5b4093cb5e2688990ef, type: 3}
 --- !u!82 &891923989099442226
 AudioSource:
   m_ObjectHideFlags: 0

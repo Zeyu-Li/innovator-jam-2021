@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class quit : MonoBehaviour
 {
+    void Start() {
+        Time.timeScale = 0f;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q)) // change escape to any other character if you like 
