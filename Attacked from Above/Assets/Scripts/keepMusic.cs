@@ -18,6 +18,11 @@ public class keepMusic : MonoBehaviour
             }
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        // if already loaded
+        if (GameObject.FindGameObjectsWithTag("NewMusic").Length == 1) {
+            DontDestroyOnLoad(this.gameObject);
+        } else {
+            Destroy(this.gameObject);
+        }
     }
 }
