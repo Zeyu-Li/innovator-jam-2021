@@ -153,6 +153,7 @@ MonoBehaviour:
   gravity: -10
   isSliding: 0
   slopeLimit: 35
+  robot: {fileID: 4921699704935416546}
 --- !u!1 &7272035318294856458
 GameObject:
   m_ObjectHideFlags: 0

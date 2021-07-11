@@ -17,12 +17,50 @@ public class player : MonoBehaviour
     public float slopeLimit = 35f;
     private Vector3 slopeParallel;
 
+    public GameObject robot;
+
     // Update is called once per frame
     void Update()
     {
 
         float x = -Input.GetAxis("Horizontal");
         float z = -Input.GetAxis("Vertical");
+
+        // get one of 8 position rotations
+        if (x == 0 && z == 0) {
+            // do nothing
+            ;
+        } else if (x == 0) {
+            if (z > 0) {
+                robot.transform.rotation = Quaternion.Euler(0, -45, 0);
+            } else {
+                robot.transform.rotation = Quaternion.Euler(0, 135, 0);
+            }
+        } else if (z == 0) {
+            if (x > 0) {
+                robot.transform.rotation = Quaternion.Euler(0, 45, 0);
+            } else {
+                robot.transform.rotation = Quaternion.Euler(0, 225, 0);
+            }
+        } else {
+            if (x > 0) {
+                if (z > 0) {
+                    robot.transform.rotation = Quaternion.Euler(0, 0, 0);
+                } else {
+                    robot.transform.rotation = Quaternion.Euler(0, 90, 0);
+                }
+            } else {
+                if (z > 0) {
+                    robot.transform.rotation = Quaternion.Euler(0, 270, 0);
+                } else {
+                    robot.transform.rotation = Quaternion.Euler(0, 180, 0);
+                }
+            }
+        }
+
+        // debug
+        // if (!(x == 0 && z == 0))
+        //     Debug.Log(robot.transform.rotation);
 
         // stop from going faster diagonally
         if (x != 0f && z != 0f) {
