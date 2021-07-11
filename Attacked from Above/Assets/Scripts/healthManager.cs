@@ -19,10 +19,10 @@ public class healthManager : MonoBehaviour
     void Update()
     {
         if (health == 1) {
-            firstHeart.SetActive(false);
+            secondHeart.SetActive(false);
         } else if (health == 0) {
             // death screen
-            secondHeart.SetActive(false);
+            firstHeart.SetActive(false);
             gameOverUI.SetActive(true);
         }
     }
