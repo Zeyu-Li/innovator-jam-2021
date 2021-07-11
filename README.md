@@ -2,7 +2,7 @@
 
 ![logo](https://raw.githubusercontent.com/Zeyu-Li/innovator-jam-2021/main/Attacked%20from%20Above/Assets/Sprites/banner.png)
 
-Attacked from Above, a cozy isometric game with aliens 👾👽
+Attacked from Above, an atmospheric isometric game with aliens 👾👽
 
 
 
