@@ -1387,6 +1387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winEvent: {fileID: 785118394}
+  winAudioClip: {fileID: 8300000, guid: 0c870bf8921156441aac4de6790010af, type: 3}
 --- !u!1 &1465133347
 GameObject:
   m_ObjectHideFlags: 0

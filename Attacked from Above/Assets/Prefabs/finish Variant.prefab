@@ -107,6 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winEvent: {fileID: 0}
+  shooter: {fileID: 0}
+  healthManger: {fileID: 0}
+  winAudioClip: {fileID: 8300000, guid: 0c870bf8921156441aac4de6790010af, type: 3}
 --- !u!1001 &4301273991222985353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: adca714f31dd9674981d192a724035c0,
         type: 3}
       propertyPath: m_Name
-      value: finish
+      value: finish Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8442510506162454399, guid: adca714f31dd9674981d192a724035c0,
         type: 3}
