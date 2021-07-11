@@ -19,7 +19,7 @@ public class keepMusic : MonoBehaviour
         }
 
         // if already loaded
-        if (GameObject.FindGameObjectsWithTag("NewMusic").Length == 1) {
+        if (GameObject.FindGameObjectsWithTag("NewMusic").Length <= 1) {
             DontDestroyOnLoad(this.gameObject);
         } else {
             Destroy(this.gameObject);

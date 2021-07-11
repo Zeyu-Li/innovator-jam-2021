@@ -16,8 +16,14 @@ public class quit1 : MonoBehaviour
             Application.Quit();
         } else if (Input.GetKeyDown(KeyCode.R)) // change escape to any other character if you like 
         {
-            SceneManager.LoadScene(0);
             Time.timeScale = 1f;
+            // destroy music
+            try {
+                Destroy(GameObject.Find("Music"));
+            } catch {
+                ;
+            }
+            SceneManager.LoadScene(0);
         }
     }
 }

@@ -8,7 +8,6 @@ public class reset : MonoBehaviour
     void Start()
     {
         PlayerPrefs.DeleteAll();
-        
     }
 
     // Update is called once per frame
