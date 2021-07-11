@@ -42,7 +42,7 @@ public class drawBridge : MonoBehaviour
             bridgeDrawn = true;
             startTime = Time.time;
             // play sound
-            audioSource.PlayOneShot(buttonSound, .2f);
+            audioSource.PlayOneShot(buttonSound, .35f);
 
             // push button animation
             gameObject.transform.parent.GetComponent<Animator>().SetBool("isOn", true);

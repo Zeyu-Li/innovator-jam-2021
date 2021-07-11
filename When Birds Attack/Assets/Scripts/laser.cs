@@ -5,6 +5,7 @@ using UnityEngine;
 public class laser : MonoBehaviour
 {
     public float speed = 5f;
+    public float volume = .4f;
     // audio
     AudioSource audioSource;
     public AudioClip audioClip;
@@ -24,7 +25,7 @@ public class laser : MonoBehaviour
     private void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.CompareTag("Ground")) {   
             // destroy item + sound
-            audioSource.PlayOneShot(audioClip, .7f);
+            audioSource.PlayOneShot(audioClip, volume);
             Destroy(gameObject);
         } else if (collision.gameObject.CompareTag("Player")) {
             // decrease player health
@@ -32,7 +33,7 @@ public class laser : MonoBehaviour
             healthManager.GetComponent<healthManager>().health -= 1;
 
             // play sound and destroy
-            audioSource.PlayOneShot(hurtClip, .7f);
+            audioSource.PlayOneShot(hurtClip, volume);
             Destroy(gameObject);
         }
     }
