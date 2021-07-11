@@ -4,9 +4,13 @@
 
 Attacked from Above, a cozy isometric game with aliens 👾👽
 
+
+
+Robots, aliens, lasers, two ends, and fun. Play it now one the itch.io page below or download it for windows
+
 ---
 
-See the game's [itch.io page]()
+See this game's [itch.io page]()
 
 
 
@@ -16,7 +20,13 @@ See [itch.io page](https://itch.io/jam/ij2021)
 
 ## Screenshots 🎥
 
+![screen1](img/screen1.png)
 
+![screen2](img/screen2.png)
+
+![screen3](img/screen3.png)
+
+![peace](img/peace.png)
 
 
 
