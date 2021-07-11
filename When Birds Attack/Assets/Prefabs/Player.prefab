@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b91dce81999074541bf6ab644ea44348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPauseTime: 2
+  startPauseTime: 1.5
   pauseTime: 0.5
   destroyTime: 10
   spawnX: 9.85
