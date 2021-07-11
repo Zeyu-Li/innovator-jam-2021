@@ -12,9 +12,13 @@ public class fadeoutMusic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        previousMusic = GameObject.Find(previousMusicName);
-        music = previousMusic.GetComponent<AudioSource>();
-        StartCoroutine("FadeOut");
+        try {
+            previousMusic = GameObject.Find(previousMusicName);
+            music = previousMusic.GetComponent<AudioSource>();
+            StartCoroutine("FadeOut");
+        } catch {
+            newMusic.SetActive(true);
+        }
     }
 
     private IEnumerator FadeOut(){
