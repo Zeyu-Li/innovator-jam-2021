@@ -6,7 +6,7 @@ Attacked from Above, an atmospheric isometric game with aliens 👾👽
 
 
 
-Robots, aliens, lasers, two ends, and fun. Try to get to the telepad while dodging lasers and pushing buttons... can you find the secret ending? Play it now one the itch.io page below.  
+Robots, aliens, lasers, two ends, and fun. Try to get to the telepad while dodging lasers and pushing buttons... can you find the secret ending? Play it now on the itch.io page below.  
 
 ---
 
